@@ -1,0 +1,25 @@
+$moderate-cyan: hsl(176, 50%, 47%);
+$dark-cyan: hsl(176, 72%, 28%);
+$black: hsl(0, 0, 0);
+$dark-grey: hsl(0, 0%, 48%);
+@import url("https://fonts.googleapis.com/css2?family=Commissioner&display=swap");
+$font: "Commissioner", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}
+body {
+  background-color: rgba(240, 239, 239, 0.8);
+}
+@import "./Header";
+@import "./Nav";
+@import "./Section";
+@import "./Section1";
+@import "./Section2";
+@import "./Section3";
+@import "./Section4";
+@import "./footer";
+@import "./Menu";

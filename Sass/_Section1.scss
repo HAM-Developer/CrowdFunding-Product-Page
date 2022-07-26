@@ -1,0 +1,82 @@
+.section1 {
+  text-align: center;
+  width: 90%;
+  margin: -5rem auto 2rem auto;
+  padding:0 2rem 5rem 2rem;
+  background-color: white;
+  border-radius: 10px;
+  .logo {
+    position: relative;
+    top: -30px;
+  }
+  h2 {
+    margin-top: -0.5em;
+  }
+  p {
+    margin-top: 1.5rem;
+    color: $dark-grey;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;}
+    #project {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+      
+    a {
+      height: 3.5rem;
+      width: 12.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      color: white;
+      background-color: $moderate-cyan;
+      font-weight: 700;
+      transition: all 0.25s ease-out;
+      &:hover {
+        background-color: $dark-cyan;
+      }
+    }
+ 
+    .project2 {
+      color: $dark-cyan;
+      background-color: rgba(221, 221, 221, 0.5);
+    }
+
+       #bookmark {
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 25px;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 700;
+p{
+  margin:0;
+    display: none;
+    }
+      svg {
+        height: inherit;
+      }
+    }
+}
+.open_btn {
+  color: $dark-cyan;
+}
+.open_svg {
+  fill: $dark-cyan;
+}
+@media screen and ( min-width: 768px ){
+  .section1{
+    width: 60vw;
+    #bookmark{
+      p{
+        display:block;
+          margin: 1rem;
+        }}
+    
+    }}
+  

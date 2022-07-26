@@ -1,0 +1,112 @@
+nav {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+width: 90%;
+margin: auto;
+padding: 1rem 0.5rem;
+    
+  ul{
+     position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14rem;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 3;
+    }
+      li {
+    list-style: none;
+    border-bottom: 1px solid #f1f1f1;
+        &:last-child{
+      border-bottom: none;}
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+ padding: 1.25rem 1rem;
+    color: black;
+    transition: color 0.25s ease-out;
+&:hover{
+  color: #0000008a;
+  }
+  }
+}
+    .navbar{
+        display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+        background-color: #000000;
+        background-color: #0000003f;
+        transition: all 0.25s ease-out;
+text-align: center;
+      
+        }
+           .closebtn{
+          cursor: 'pointer';
+          display: none;
+          width: 1.5rem;
+          height: 1.5rem;
+          position: absolute;
+          top: 2.5%;
+          right: 7.5%;
+          z-index: 100;
+          }  
+  .open{
+    display: block;
+    }
+      .close{
+        display: none;}
+ 
+   .hamburger{
+    width: 1.5rem;
+    height: 1rem;
+    cursor: pointer;
+    }
+  @media  screen and (min-width:768px) {
+    .navbar{
+      display: block;
+      position: relative;
+      background-color: transparent;
+          height: 8vh;
+      width: 20rem;
+      }
+    nav{
+        ul{
+      position: relative;
+          background-color: transparent;
+          transform: none;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          }
+            li{
+              border-bottom: none;
+              
+              }
+        }
+        .hamburger,.closebtn{
+          display: none;
+          }
+  }
+  // nav {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   color: white;
+//   padding-top: 2rem;
+//   padding-inline: 5rem;
+//   ul {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//   }
+// 
+// }

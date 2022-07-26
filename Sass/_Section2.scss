@@ -1,0 +1,59 @@
+.section2 {
+  width: 90%;
+  padding: 2.5rem;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 10px;
+  .sub_section2 {
+    text-align: center;
+    .sub1,.sub2 {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 0;
+      margin: 1rem 0;
+    }
+       .sub1{
+      margin-top: 0;}
+    .sub3 {
+      padding: 1rem 0;
+    }
+    p {
+      color: darkgray;
+      margin-top: 1rem;
+    }
+  }
+  #myProgress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+  }
+
+  #myBar {
+    width: 70%;
+    height: 10px;
+    background-color: $moderate-cyan;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width:768px) {
+  .section2{
+    width: 60vw;
+    padding:  1.5rem;
+    .sub_section2{
+      display: flex;
+    justify-content: space-around;
+    align-items: center;
+     .sub1, .sub2,.sub3 {
+      padding-right:  3rem;
+      margin: 0;
+      border-right: 1px solid darkgray;
+      border-bottom: none;
+      }
+  .sub3 {
+      border: none;
+    }
+    }
+      #myProgress{
+    margin-block: 2rem;
+        }
+  }
+}
